@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Bibhu Shrestha | Software Developer</title>
+  <meta name="title" content="Bibhu Shrestha | Software Developer">
+  <meta name="description" content="Personal portfolio of Bibhu Shrestha, a software developer based in Nepal focused on Java, problem solving, algorithms, and web technologies.">
+  <meta name="author" content="Bibhu Shrestha">
+  <meta name="keywords" content="Bibhu Shrestha, Software Developer, Java Developer, Nepal Developer, Portfolio, Algorithms, Web Development">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="canonical" href="https://bibhushrestha.github.io/">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bibhushrestha.github.io/">
+  <meta property="og:title" content="Bibhu Shrestha | Software Developer">
+  <meta property="og:description" content="Personal portfolio of Bibhu Shrestha, showcasing software projects, technical skills, and background.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/184100016?v=4">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="https://bibhushrestha.github.io/">
+  <meta property="twitter:title" content="Bibhu Shrestha | Software Developer">
+  <meta property="twitter:description" content="Personal portfolio of Bibhu Shrestha, showcasing software projects, technical skills, and background.">
+  <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/184100016?v=4">
+
+  <!-- Security & Privacy Policies -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://avatars.githubusercontent.com; connect-src 'self' https://api.github.com https://formsubmit.co; form-action 'self' https://formsubmit.co;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Performance Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://avatars.githubusercontent.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Accessible Skip to Main Content Link (WCAG 2.1) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Bibhu Shrestha Homepage">
+        <span class="logo-badge">BS</span>
+        <span class="logo-name">Bibhu Shrestha</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link nav-btn-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-indicator"></span>
+            <span>Available for opportunities &bull; <span id="heroLocation">Nepal</span></span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-blue" id="heroName">Bibhu Shrestha</span>
+          </h1>
+          <p class="hero-subtitle" id="heroTitle">Developer | Learner | Problem Solver</p>
+          
+          <p class="hero-bio" id="heroBio">
+            I’m Bibhu Shrestha, a BCA 5th-semester student and aspiring software developer. I enjoy building practical projects and exploring technologies like Python, OOP, data structures, algorithms, web development, and data analysis. I’m passionate about learning through hands-on experience, solving problems, and continuously improving my skills as a developer.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zm0 6a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2z" clip-rule="evenodd" />
+              </svg>
+              View Projects
+            </a>
+            <a href="https://github.com/BibhuShrestha" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 16 16" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/bibhu-shrestha-b6b9b2389/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 16 16" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+              LinkedIn
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-wrapper">
+              <img 
+                src="https://avatars.githubusercontent.com/u/184100016?v=4" 
+                alt="Bibhu Shrestha avatar" 
+                class="avatar-image"
+                id="heroAvatar"
+                width="220" 
+                height="220"
+                loading="eager"
+              >
+            </div>
+            <div class="avatar-meta">
+              <span class="avatar-title" id="avatarTitle">Bibhu Shrestha</span>
+              <span class="avatar-sub">@BibhuShrestha &bull; <span id="avatarLocation">Nepal</span></span>
+              <div class="focus-badge">
+                <span class="focus-icon" aria-hidden="true">&#x1F3AF;</span>
+                <span class="focus-text" id="avatarStatus">Focusing on Core Software Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Overview</p>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-card">
+          <div class="about-grid">
+            <div class="about-col">
+              <h3 class="about-subtitle">Who I Am & What I Do</h3>
+              <p class="about-text">
+                I am a dedicated AI/ML developer based in Nepal. I focus on core programming, object-oriented concepts, algorithm design, and building clear, maintainable codebases. I enjoy deconstructing challenging technical problems into intuitive, well-crafted solutions.
+              </p>
+              <p class="about-text">
+                I prioritize clean logic, proper code structure, and strong engineering fundamentals over unnecessary complexity.
+              </p>
+            </div>
+
+            <div class="about-col">
+              <h3 class="about-subtitle">Learning & Direction</h3>
+              <p class="about-text">
+                Currently, I am expanding my skills across algorithmic optimization, modern web technologies, and scalable software practices. I actively practice coding fundamentals and logic implementation through regular development.
+              </p>
+              <p class="about-text">
+                My career goal is to work on impactful software systems, contribute to collaborative engineering teams, and continuously grow into a well-rounded developer.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-label">Location</span>
+              <span class="highlight-value">Nepal</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Primary Stack</span>
+              <span class="highlight-value">Java, Python, Web Fundamentals</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Core Focus</span>
+              <span class="highlight-value">Algorithms & AI/ML Development</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-label">Status</span>
+              <span class="highlight-value">Open to New Opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Competencies</p>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            A grounded overview of the programming languages, tools, and computer science concepts I work with.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Programming Languages</h3>
+            </div>
+            <ul class="skill-badges" aria-label="Programming Languages">
+              <li class="skill-badge primary-badge">Java</li>
+              <li class="skill-badge">Python</li>
+              <li class="skill-badge">JavaScript</li>
+              <li class="skill-badge">SQL</li>
+            </ul>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Frontend & Web</h3>
+            </div>
+            <ul class="skill-badges" aria-label="Web Development Skills">
+              <li class="skill-badge">HTML5</li>
+              <li class="skill-badge">CSS3</li>
+              <li class="skill-badge">Responsive Design</li>
+              <li class="skill-badge">DOM Manipulation</li>
+              <li class="skill-badge">UI/UX Principles</li>
+            </ul>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Tools & Platforms</h3>
+            </div>
+            <ul class="skill-badges" aria-label="Tools and Platforms">
+              <li class="skill-badge">Git</li>
+              <li class="skill-badge">GitHub</li>
+              <li class="skill-badge">VS Code</li>
+              <li class="skill-badge">Command Line</li>
+            </ul>
+          </div>
+
+          <!-- Fundamentals & Concepts -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon-wrap">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Core Concepts</h3>
+            </div>
+            <ul class="skill-badges" aria-label="Computer Science Concepts">
+              <li class="skill-badge">Object-Oriented Programming (OOP)</li>
+              <li class="skill-badge">Data Structures</li>
+              <li class="skill-badge">Algorithms</li>
+              <li class="skill-badge">Problem Solving</li>
+              <li class="skill-badge">Code Debugging</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Portfolio</p>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Selected projects sourced directly from my GitHub profile and active development repositories.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: Practice Repo -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-type-tag">Public Repository</div>
+              <span class="project-stars" title="1 star on GitHub">
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
+                </svg>
+                1 star
+              </span>
+            </div>
+
+            <h3 class="project-name">Java Logic & Algorithm Practice</h3>
+            <p class="project-desc">
+              A structured repository containing core Java algorithmic implementations, pattern generation programs (Butterfly, Diamond, Pyramid, Palindromic patterns), logic puzzle implementations, and interactive console games.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">Algorithms</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/BibhuShrestha/practice" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                View Repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Personal Portfolio Website -->
+          <article class="project-card">
+            <div class="project-card-header">
+              <div class="project-type-tag">Web Application</div>
+              <span class="project-badge">Live</span>
+            </div>
+
+            <h3 class="project-name">Minimalist Developer Portfolio</h3>
+            <p class="project-desc">
+              A responsive, lightweight personal portfolio crafted with semantic HTML5, vanilla CSS, and JavaScript. Designed following clean UI principles with a modern blue and white palette, smooth accessibility, and zero bulky frameworks.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive Design</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://github.com/BibhuShrestha" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                Source Code
+              </a>
+              <a href="#hero" class="btn btn-sm btn-outline">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Current Site
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Background</p>
+          <h2 class="section-title">Education</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-list">
+          <!-- Qualification 1: BCA -->
+          <div class="education-card">
+            <div class="education-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="education-details">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Bachelor of Computer Applications (BCA)</h3>
+                  <p class="education-institution">NAST College (National Academy of Science &amp; Technology), Dhangadhi, Nepal</p>
+                </div>
+                <span class="education-year">Current &bull; 5th Semester</span>
+              </div>
+              <p class="education-desc">
+                Undergraduate program with a comprehensive curriculum covering software engineering, object-oriented programming (Java/Python), data structures, algorithms, database systems, AI/ML concepts, and web technology.
+              </p>
+            </div>
+          </div>
+
+          <!-- Qualification 2: Diploma in Civil Engineering -->
+          <div class="education-card">
+            <div class="education-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="education-details">
+              <div class="education-header">
+                <div>
+                  <h3 class="education-degree">Diploma in Civil Engineering</h3>
+                  <p class="education-institution">Farwest Technical College, Nepal</p>
+                </div>
+                <span class="education-year">Completed</span>
+              </div>
+              <p class="education-desc">
+                Completed technical diploma training providing solid grounding in engineering principles, analytical problem-solving, structural mechanics, technical documentation, and project execution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Get in Touch</p>
+          <h2 class="section-title">Contact</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Have a project in mind, an opportunity, or want to connect? Feel free to reach out via direct link or the form below.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Methods Cards -->
+          <div class="contact-info-col">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <h3 class="contact-label">Email</h3>
+                <p class="contact-value" id="emailText">bibhustha5@gmail.com</p>
+                <div class="contact-links">
+                  <a href="mailto:bibhustha5@gmail.com" class="link-primary">Send Email</a>
+                  <button type="button" class="btn-copy" id="copyEmailBtn" aria-label="Copy email address to clipboard">Copy</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <h3 class="contact-label">GitHub</h3>
+                <p class="contact-value">github.com/BibhuShrestha</p>
+                <div class="contact-links">
+                  <a href="https://github.com/BibhuShrestha" target="_blank" rel="noopener noreferrer" class="link-primary">Visit Profile &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 16 16" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                </svg>
+              </div>
+              <div class="contact-card-content">
+                <h3 class="contact-label">LinkedIn</h3>
+                <p class="contact-value">linkedin.com/in/bibhu-shrestha-b6b9b2389</p>
+                <div class="contact-links">
+                  <a href="https://www.linkedin.com/in/bibhu-shrestha-b6b9b2389/" target="_blank" rel="noopener noreferrer" class="link-primary">Connect on LinkedIn &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secure Client-Side Contact Form -->
+          <div class="contact-form-col">
+            <div class="form-card">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <p class="form-subtitle">Fill in the fields below to prepare a direct inquiry.</p>
+
+              <form 
+                id="contactForm" 
+                class="contact-form" 
+                action="https://formsubmit.co/bibhustha5@gmail.com" 
+                method="POST" 
+                novalidate
+              >
+                <!-- Anti-spam Honeypot (hidden from human users) -->
+                <div class="form-group honeypot-field" aria-hidden="true">
+                  <label for="company_website">Do not fill this field</label>
+                  <input type="text" id="company_website" name="_honey" tabindex="-1" autocomplete="off">
+                </div>
+
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" id="formNext" value="">
+                <input type="hidden" id="formTimestamp" name="_timestamp" value="">
+
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Your Name <span class="required">*</span></label>
+                  <input 
+                    type="text" 
+                    id="senderName" 
+                    name="name" 
+                    class="form-input" 
+                    placeholder="Enter your full name" 
+                    required 
+                    maxlength="80"
+                  >
+                  <span class="field-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Your Email <span class="required">*</span></label>
+                  <input 
+                    type="email" 
+                    id="senderEmail" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="Enter your email address" 
+                    required 
+                    maxlength="100"
+                  >
+                  <span class="field-error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderSubject" class="form-label">Subject</label>
+                  <input 
+                    type="text" 
+                    id="senderSubject" 
+                    name="_subject" 
+                    class="form-input" 
+                    placeholder="Enter subject (e.g. Project inquiry, Collaboration)" 
+                    maxlength="120"
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage" class="form-label">Message <span class="required">*</span></label>
+                  <textarea 
+                    id="senderMessage" 
+                    name="message" 
+                    class="form-textarea" 
+                    rows="4" 
+                    placeholder="Write your message here..." 
+                    required 
+                    maxlength="2000"
+                  ></textarea>
+                  <span class="field-error" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                  <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                  </svg>
+                  <span id="submitBtnText">Send Message</span>
+                </button>
+
+                <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-copy">
+        <p>&copy; <span id="currentYear">2026</span> <strong>Bibhu Shrestha</strong>. All rights reserved.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Links">
+        <ul class="footer-links">
+          <li><a href="https://github.com/BibhuShrestha" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><span class="divider" aria-hidden="true">&bull;</span></li>
+          <li><a href="https://www.linkedin.com/in/bibhu-shrestha-b6b9b2389/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><span class="divider" aria-hidden="true">&bull;</span></li>
+          <li><a href="mailto:bibhustha5@gmail.com">Email</a></li>
+          <li><span class="divider" aria-hidden="true">&bull;</span></li>
+          <li><button type="button" class="footer-legal-btn" id="openPrivacyBtn">Privacy & Terms</button></li>
+          <li><span class="divider" aria-hidden="true">&bull;</span></li>
+          <li><a href="#hero" class="back-to-top" aria-label="Back to top of page">Back to Top &uarr;</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Accessible Privacy & Terms Modal (GDPR / CCPA / Security Disclosures) -->
+  <dialog class="legal-modal" id="privacyModal" aria-labelledby="privacyTitle">
+    <div class="legal-modal-content">
+      <div class="legal-modal-header">
+        <h3 id="privacyTitle">Privacy & Legal Disclosures</h3>
+        <button type="button" class="legal-close-btn" id="closePrivacyBtn" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="legal-modal-body">
+        <h4>1. Security & Encryption</h4>
+        <p>This website is built as an encrypted, static application. Communication is safeguarded by SSL/HTTPS, Content Security Policy (CSP), and nosniff protection.</p>
+        <h4>2. Data Protection & Privacy</h4>
+        <p>No tracking cookies, marketing beacons, or third-party surveillance scripts are used. We do not store or monetize any personal information.</p>
+        <h4>3. Direct Communication</h4>
+        <p>Inquiries initiated through the contact form are validated in your browser and dispatched directly through your email client. No third-party servers intercept or retain your message.</p>
+        <h4>4. Intellectual Property</h4>
+        <p>&copy; 2026 Bibhu Shrestha. All original code, design assets, and content are protected under personal copyright.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Notification Toast Container -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive" aria-hidden="true"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

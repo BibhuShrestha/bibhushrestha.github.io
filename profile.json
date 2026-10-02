@@ -1,0 +1,24 @@
+{
+  "name": "Bibhu Shrestha",
+  "title": "Developer | Learner | Problem Solver",
+  "location": "Nepal",
+  "email": "bibhustha5@gmail.com",
+  "github": "https://github.com/BibhuShrestha",
+  "linkedin": "https://www.linkedin.com/in/bibhu-shrestha-b6b9b2389/",
+  "status": "Focusing on AI/ML Engineering",
+  "bio": "I’m Bibhu Shrestha, a BCA 5th-semester student and aspiring software developer. I enjoy building practical projects and exploring technologies like Python, OOP, data structures, algorithms, web development, and data analysis. I’m passionate about learning through hands-on experience, solving problems, and continuously improving my skills as a developer.",
+  "education": [
+    {
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "institution": "NAST College (National Academy of Science & Technology), Dhangadhi, Nepal",
+      "year": "Current • 5th Semester",
+      "description": "Undergraduate program with a comprehensive curriculum covering software engineering, object-oriented programming (Java/Python), data structures, algorithms, database systems, AI/ML concepts, and web technology."
+    },
+    {
+      "degree": "Diploma in Civil Engineering",
+      "institution": "Farwest Technical College, Nepal",
+      "year": "Completed",
+      "description": "Completed technical diploma training providing solid grounding in engineering principles, analytical problem-solving, structural mechanics, technical documentation, and project execution."
+    }
+  ]
+}
