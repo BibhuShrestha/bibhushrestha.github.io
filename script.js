@@ -493,4 +493,34 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize Auto-Sync
   syncGitHubData();
   syncProfileData();
+
+  // 10. Live Visitor Counter (countapi.xyz)
+  async function loadVisitorCount() {
+    const counterEl = document.getElementById('visitorCount');
+    if (!counterEl) return;
+    try {
+      const res = await fetch('https://api.countapi.xyz/hit/bibhushrestha.github.io/portfolio-visits');
+      if (res.ok) {
+        const data = await res.json();
+        if (data && typeof data.value === 'number') {
+          // Animate count-up
+          const target = data.value;
+          const duration = 1200;
+          const steps = 40;
+          const increment = Math.ceil(target / steps);
+          let current = Math.max(0, target - increment * steps);
+          const interval = setInterval(() => {
+            current = Math.min(current + increment, target);
+            counterEl.textContent = current.toLocaleString();
+            if (current >= target) clearInterval(interval);
+          }, duration / steps);
+        }
+      } else {
+        counterEl.textContent = 'N/A';
+      }
+    } catch (_) {
+      counterEl.textContent = 'N/A';
+    }
+  }
+  loadVisitorCount();
 });

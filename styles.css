@@ -414,7 +414,39 @@ img {
   color: var(--text-body);
   max-width: 580px;
   line-height: 1.7;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Visitor Counter Badge */
+.visitor-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--bg-card, #f1f5f9);
+  border: 1px solid var(--border-light, #e2e8f0);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.82rem;
+  color: var(--text-muted, #64748b);
+  margin-bottom: 1.75rem;
+  width: fit-content;
+}
+
+.visitor-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.visitor-label {
+  font-weight: 500;
+  color: var(--text-body, #334155);
+}
+
+.visitor-count {
+  font-weight: 700;
+  color: var(--accent-blue, #1d4ed8);
+  font-variant-numeric: tabular-nums;
+  min-width: 2ch;
 }
 
 .hero-actions {
