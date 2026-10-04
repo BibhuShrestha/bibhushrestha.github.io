@@ -29,7 +29,7 @@
   <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/184100016?v=4">
 
   <!-- Security & Privacy Policies -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://avatars.githubusercontent.com https://hits.sh; connect-src 'self' https://api.github.com https://formsubmit.co; form-action 'self' https://formsubmit.co;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://avatars.githubusercontent.com; connect-src 'self' https://api.github.com https://formsubmit.co https://countapi.mileshilliard.com; form-action 'self' https://formsubmit.co;">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -93,17 +93,11 @@
             I’m Bibhu Shrestha, a BCA 5th-semester student with a deep focus on learning <strong>AI &amp; Machine Learning</strong>. I enjoy building practical projects and exploring technologies like Python, data structures, algorithms, web development, and data analysis. I’m passionate about learning through hands-on experience, solving real-world problems, and continuously growing toward becoming an AI/ML engineer.
           </p>
 
-          <div class="visitor-counter" id="visitorCounter">
+          <div class="visitor-counter" id="visitorCounter" aria-label="Dynamic live visitors count">
+            <span class="live-pulse" aria-hidden="true"></span>
             <span class="visitor-icon" aria-hidden="true">&#128100;</span>
-            <span class="visitor-label">Total Visits:</span>
-            <a href="https://hits.sh/bibhushrestha.github.io/" target="_blank" rel="noopener noreferrer" class="visitor-badge-link" title="Click to view live analytics">
-              <img 
-                src="https://hits.sh/bibhushrestha.github.io.svg?label=Visitors&amp;color=1d4ed8&amp;labelColor=0f172a" 
-                alt="Total Portfolio Visitors" 
-                class="visitor-badge-img"
-                height="20"
-              >
-            </a>
+            <span class="visitor-label">Live Visitors:</span>
+            <span class="visitor-count" id="visitorCount">&#8212;</span>
           </div>
 
           <div class="hero-actions">

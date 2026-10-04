@@ -493,4 +493,52 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize Auto-Sync
   syncGitHubData();
   syncProfileData();
+
+  // 10. Real-time Dynamic Visitor Counter
+  async function loadVisitorCount() {
+    const counterEl = document.getElementById('visitorCount');
+    if (!counterEl) return;
+
+    // Show cached count immediately so there is zero layout shift
+    const cachedCount = localStorage.getItem('portfolio_visitor_count');
+    if (cachedCount) {
+      counterEl.textContent = parseInt(cachedCount, 10).toLocaleString();
+    }
+
+    try {
+      const res = await fetch('https://countapi.mileshilliard.com/api/v1/hit/bibhushrestha_github_io');
+      if (res.ok) {
+        const data = await res.json();
+        if (data && typeof data.value === 'number') {
+          const target = data.value;
+          localStorage.setItem('portfolio_visitor_count', target.toString());
+
+          // Dynamic count-up animation
+          const startVal = cachedCount ? Math.max(0, parseInt(cachedCount, 10) - 1) : 0;
+          const duration = 1000;
+          const steps = 25;
+          const stepTime = duration / steps;
+          const diff = Math.max(1, target - startVal);
+          const increment = Math.max(1, Math.ceil(diff / steps));
+          let current = startVal;
+
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              current = target;
+              clearInterval(timer);
+            }
+            counterEl.textContent = current.toLocaleString();
+          }, stepTime);
+        }
+      }
+    } catch (e) {
+      console.info('Visitor counter using cached/offline value.');
+      if (!counterEl.textContent || counterEl.textContent === '—') {
+        counterEl.textContent = '1+';
+      }
+    }
+  }
+
+  loadVisitorCount();
 });
